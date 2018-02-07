@@ -35,6 +35,10 @@ if (env === 'es') {
   config.presets.unshift(['env', {modules: false}]);
 }
 
+if (env === 'rollup') {
+  config.presets.unshift(['env', {modules: false}]);
+}
+
 if (env === 'test') {
   config.plugins.push('transform-es2015-modules-commonjs');
 }
