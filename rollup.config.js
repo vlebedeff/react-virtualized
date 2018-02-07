@@ -23,6 +23,7 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
+      plugins: ['external-helpers'],
     }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('development'),
